@@ -1,0 +1,84 @@
+/* Styles for the ShopByCategory component */
+.shop-by-category {
+    text-align: center;
+  }
+  
+  .shop-by-category h2 {
+    margin-bottom: 20px;
+  }
+  
+  .shop-by-category .react-tabs {
+    margin-top: 20px;
+  }
+  
+  .shop-by-category .react-tabs .react-tabs__tab-list {
+    margin-bottom: 10px;
+  }
+  
+  .shop-by-category .react-tabs .react-tabs__tab {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+  }
+  
+  .shop-by-category .react-tabs .react-tabs__tab--selected {
+    background-color: #fff;
+    border-color: #ccc;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .shop-by-category .react-tabs .react-tabs__tab-panel {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 4px 4px 4px;
+  }
+  
+  .shop-by-category .toy-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .shop-by-category .toy {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .shop-by-category .toy img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .shop-by-category .toy h4 {
+    margin-top: 10px;
+  }
+  
+  .shop-by-category .toy p {
+    margin: 5px 0;
+  }
+  
+  .shop-by-category .toy button {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .shop-by-category .toy button:hover {
+    background-color: #e0e0e0;
+  }
+  

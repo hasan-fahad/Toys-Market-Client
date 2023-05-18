@@ -1,0 +1,104 @@
+[
+    {
+        "Name": "Product 1",
+        "Price": 10.99,
+        "Rating": 4.5
+      },
+
+      {
+        "Name": "Product 2",
+        "Price": 25.5,
+        "Rating": 3.8
+      },
+      {
+        "Name": "Product 3",
+        "Price": 7.25,
+        "Rating": 4.2
+      },
+      {
+        "Name": "Product 4",
+        "Price": 14.99,
+        "Rating": 4.7
+      },
+      {
+        "Name": "Product 5",
+        "Price": 19.99,
+        "Rating": 3.5
+      },
+      {
+        "Name": "Product 6",
+        "Price": 9.99,
+        "Rating": 4.1
+      },
+      {
+        "Name": "Product 7",
+        "Price": 29.95,
+        "Rating": 4.9
+      },
+      {
+        "Name": "Product 8",
+        "Price": 12.5,
+        "Rating": 3.2
+      },
+      {
+        "Name": "Product 9",
+        "Price": 6.75,
+        "Rating": 4.4
+      },
+      {
+        "Name": "Product 10",
+        "Price": 17.99,
+        "Rating": 4.6
+      },
+      {
+        "Name": "Product 11",
+        "Price": 8.5,
+        "Rating": 3.9
+      },
+      {
+        "Name": "Product 12",
+        "Price": 21.99,
+        "Rating": 4.8
+      },
+      {
+        "Name": "Product 13",
+        "Price": 11.25,
+        "Rating": 4.3
+      },
+      {
+        "Name": "Product 14",
+        "Price": 16.5,
+        "Rating": 3.7
+      },
+      {
+        "Name": "Product 15",
+        "Price": 13.99,
+        "Rating": 4.0
+      },
+      {
+        "Name": "Product 16",
+        "Price": 22.5,
+        "Rating": 4.9
+      },
+      {
+        "Name": "Product 17",
+        "Price": 9.75,
+        "Rating": 3.6
+      },
+      {
+        "Name": "Product 18",
+        "Price": 18.99,
+        "Rating": 4.7
+      },
+      {
+        "Name": "Product 19",
+        "Price": 15.5,
+        "Rating": 3.4
+      },
+      {
+        "Name": "Product 20",
+        "Price": 10.99,
+        "Rating": 4.5
+      }
+      
+]
