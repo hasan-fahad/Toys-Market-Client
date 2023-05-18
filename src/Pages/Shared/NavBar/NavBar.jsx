@@ -8,6 +8,7 @@ const NavBar = () => {
         <li className="btn btn-outline rounded-md btn-success mx-3 my-2"><Link to='/about'>All Toys</Link></li>
         
         <li className="btn btn-outline rounded-md btn-success mx-3 my-2"><Link to='/about'>Blogs</Link></li>
+        <li className="btn btn-outline rounded-md btn-success mx-3 my-2"><Link to='/about'>About Us</Link></li>
     </>
 
     const userProfile = <>
