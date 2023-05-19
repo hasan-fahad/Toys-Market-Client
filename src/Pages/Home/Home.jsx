@@ -10,7 +10,10 @@ const Home = () => {
             <Banner></Banner>
             <About></About>
             <ShopByCategory></ShopByCategory>
-            <h1>This is home </h1>
+            <div className="flex justify-center my-5">
+                <button className=" btn btn-wide btn-outline btn-primary ">All Products</button>
+            </div>
+            
         </div>
     );
 };
