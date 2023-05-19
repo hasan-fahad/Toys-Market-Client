@@ -1,6 +1,6 @@
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import './ShopByCategory.css'
+
 import { useEffect, useState } from 'react';
 import car1 from '../../../assets/Images/car1.jpg'
 import car2 from '../../../assets/Images/car2.jpg'
@@ -34,7 +34,7 @@ const ShopByCategory = () => {
         <Tab className='btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mx-5'>BUSES</Tab>
         <Tab className='btn btn-xs sm:btn-sm md:btn-md lg:btn-lg mx-5'>ROBOTS</Tab>
       </TabList>
-      <TabPanel className='flex justify-center'>
+      <TabPanel className='flex justify-center my-3'>
         <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6'>
       <div className="card w-96 bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
@@ -66,7 +66,7 @@ const ShopByCategory = () => {
 </div>
 </div>
       </TabPanel>
-      <TabPanel className='flex justify-center'>
+      <TabPanel className='flex justify-center my-3'>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6'>
       <div className="card w-96 bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
@@ -98,7 +98,7 @@ const ShopByCategory = () => {
 </div>
 </div>
       </TabPanel>
-      <TabPanel className='flex justify-center'>
+      <TabPanel className='flex justify-center my-3'>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6'>
       <div className="card w-96 bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">

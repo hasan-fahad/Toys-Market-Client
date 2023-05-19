@@ -38,7 +38,7 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-   <button className="btn btn-outline btn-primary">Log in</button> 
+   <button className="btn btn-outline btn-primary"><Link to='/login'>Log in</Link></button> 
   <div className="flex-none">
     <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle">

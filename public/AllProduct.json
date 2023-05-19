@@ -2,6 +2,7 @@
     {
       "Name": "Car 1",
       "Price": 25000,
+      "img":"../src/assets/Images/car1.jpg",
       "Rating": 4.2,
       "Description": "Experience luxury and power with this high-performance car.",
       "Subcategory": "Cars"
@@ -10,6 +11,7 @@
       "Name": "Bus 1",
       "Price": 35000,
       "Rating": 4.5,
+      "img":"../src/assets/Images/bus1.jpg",
       "Description": "Transport large groups comfortably and efficiently with this spacious bus.",
       "Subcategory": "Buses"
     },
@@ -17,6 +19,7 @@
       "Name": "Robot 1",
       "Price": 5000,
       "Rating": 4.1,
+      "img":"../src/assets/Images/robot1.jpeg",
       "Description": "Discover the future of automation with this intelligent and versatile robot.",
       "Subcategory": "Robots"
     },
@@ -24,6 +27,7 @@
       "Name": "Car 2",
       "Price": 32000,
       "Rating": 4.7,
+      "img":"../src/assets/Images/car2.jpg",
       "Description": "Get behind the wheel of this stylish and reliable car for a thrilling driving experience.",
       "Subcategory": "Cars"
     },
@@ -31,6 +35,7 @@
       "Name": "Bus 2",
       "Price": 40000,
       "Rating": 4.3,
+      "img":"../src/assets/Images/bus1.jpg",
       "Description": "Enjoy a comfortable and safe journey with this modern and well-equipped bus.",
       "Subcategory": "Buses"
     },
@@ -38,6 +43,7 @@
       "Name": "Robot 2",
       "Price": 6000,
       "Rating": 3.9,
+      "img":"../src/assets/Images/robot1.jpeg",
       "Description": "Simplify your household chores and tasks with this smart home robot.",
       "Subcategory": "Robots"
     },
@@ -45,6 +51,7 @@
       "Name": "Car 3",
       "Price": 28000,
       "Rating": 4.5,
+      "img":"../src/assets/Images/car1.jpg",
       "Description": "Experience superior handling and performance with this sporty and agile car.",
       "Subcategory": "Cars"
     },
@@ -52,6 +59,7 @@
       "Name": "Bus 3",
       "Price": 38000,
       "Rating": 4.0,
+      "img":"../src/assets/Images/bus1.jpg",
       "Description": "Provide comfortable and reliable transportation with this efficient and eco-friendly bus.",
       "Subcategory": "Buses"
     },
@@ -59,6 +67,7 @@
       "Name": "Robot 3",
       "Price": 5500,
       "Rating": 4.2,
+      "img":"../src/assets/Images/robot1.jpeg",
       "Description": "Unlock endless possibilities and entertainment with this interactive and entertaining robot.",
       "Subcategory": "Robots"
     },
@@ -66,6 +75,7 @@
       "Name": "Car 4",
       "Price": 30000,
       "Rating": 4.8,
+      "img":"../src/assets/Images/car2.jpg",
       "Description": "Cruise the roads in style and luxury with this high-end and feature-packed car.",
       "Subcategory": "Cars"
     },
@@ -73,6 +83,7 @@
       "Name": "Bus 4",
       "Price": 42000,
       "Rating": 4.6,
+      "img":"../src/assets/Images/bus1.jpg",
       "Description": "Experience comfort and convenience for long journeys with this luxurious and spacious bus.",
       "Subcategory": "Buses"
     },
@@ -80,6 +91,7 @@
       "Name": "Robot 4",
       "Price": 7000,
       "Rating": 3.7,
+      "img":"../src/assets/Images/robot1.jpeg",
       "Description": "Explore the realms of technology and innovation with this advanced and programmable robot.",
       "Subcategory": "Robots"
     },
@@ -87,6 +99,7 @@
       "Name": "Car 5",
       "Price": 26000,
       "Rating": 4.4,
+      "img":"../src/assets/Images/car1.jpg",
       "Description": "Enjoy a perfect balance of performance and fuel efficiency with this eco-friendly car.",
       "Subcategory": "Cars"
     },
@@ -94,6 +107,7 @@
       "Name": "Bus 5",
       "Price": 36000,
       "Rating": 4.9,
+      "img":"../src/assets/Images/bus1.jpg",
       "Description": "Ensure safety and comfort for passengers with this reliable and well-designed bus.",
       "Subcategory": "Buses"
     },
@@ -101,6 +115,7 @@
       "Name": "Robot 5",
       "Price": 4500,
       "Rating": 4.3,
+      "img":"../src/assets/Images/robot1.jpeg",
       "Description": "Embark on exciting adventures and challenges with this versatile and durable robot.",
       "Subcategory": "Robots"
     },
@@ -108,6 +123,7 @@
       "Name": "Car 6",
       "Price": 29000,
       "Rating": 3.8,
+      "img":"../src/assets/Images/car2.jpg",
       "Description": "Feel the adrenaline rush and exhilaration with this powerful and dynamic car.",
       "Subcategory": "Cars"
     },
@@ -115,6 +131,7 @@
       "Name": "Bus 6",
       "Price": 39000,
       "Rating": 4.7,
+      "img":"../src/assets/Images/bus1.jpg",
       "Description": "Transport passengers with ease and efficiency using this modern and well-equipped bus.",
       "Subcategory": "Buses"
     },
@@ -122,6 +139,7 @@
       "Name": "Robot 6",
       "Price": 6500,
       "Rating": 4.0,
+      "img":"../src/assets/Images/robot1.jpeg",
       "Description": "Experience a new level of personal assistance and convenience with this intelligent robot.",
       "Subcategory": "Robots"
     },
@@ -129,6 +147,7 @@
       "Name": "Car 7",
       "Price": 27000,
       "Rating": 4.6,
+      "img":"../src/assets/Images/car1.jpg",
       "Description": "Turn heads and make a statement with this sleek and stylish car that offers exceptional performance.",
       "Subcategory": "Cars"
     },
@@ -136,6 +155,7 @@
       "Name": "Bus 7",
       "Price": 41000,
       "Rating": 3.5,
+      "img":"../src/assets/Images/bus1.jpg",
       "Description": "Ensure a smooth and comfortable ride for passengers with this reliable and well-maintained bus.",
       "Subcategory": "Buses"
     },
@@ -143,6 +163,7 @@
       "Name": "Robot 7",
       "Price": 7500,
       "Rating": 4.2,
+      "img":"../src/assets/Images/robot1.jpeg",
       "Description": "Experience the future of automation and artificial intelligence with this cutting-edge robot.",
       "Subcategory": "Robots"
     }
