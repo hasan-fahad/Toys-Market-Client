@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import img from '../../assets/Images/about.jpg'
 
 const Login = () => {
@@ -38,6 +39,7 @@ const handleLogin = event => {
           <input className="btn btn-primary" type="submit" value="Login"/>
         </div>
         </form>
+        <p className="label-text-alt mx-1">New to Kiddo Baby Shop <Link className="text-purple-700 font-bold" to ="/signup">Sign Up</Link></p>
       </div>
     </div>
   </div>
