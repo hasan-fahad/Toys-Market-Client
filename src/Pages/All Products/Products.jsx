@@ -11,10 +11,10 @@ const Products = ({product}) => {
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title">{Name}</h2>
-    <p>Price: {Price} tk</p>
-    <p>Rating: {Rating}</p>
-    <p>Subcategory: {Subcategory}</p>
-    <p>Description: {Description}</p>
+    <p className="text-xl text-green-600">Price: {Price} tk</p>
+    <p className="text-red-600">Rating: {Rating}</p>
+    <p className="text-blue-600">Subcategory: {Subcategory}</p>
+    <p><span className="font-semibold">Description:</span> {Description}</p>
     <div className="card-actions">
       <button className="btn btn-primary">Buy Now</button>
     </div>
