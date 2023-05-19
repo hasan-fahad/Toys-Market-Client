@@ -8,20 +8,26 @@ import { useContext } from 'react';
 
 const SignUp = () => {
 
-    const{createUser} = useContext(AuthContext);
+    const{createUser, updateUserData} = useContext(AuthContext);
+    
 
     const handleSignUp = event => {
         event.preventDefault();
         const form = event.target;
         const name = form.name.value;
         const email = form.email.value;
+        const photoURL = form.photoURL.value;
         const password = form.password.value;
-        console.log({name, email, password});
+        console.log({name, email,photoURL, password});
 
         createUser(email,password)
         .then(result => {
             const user = result.user;
             console.log(user);
+            
+            event.target.reset();
+            
+            updateUserData(result.user, name, photoURL);
         })
         .catch(error=> console.log(error))
     }
@@ -51,6 +57,12 @@ const SignUp = () => {
                 <input type="text" name='email' placeholder="email" className="input input-bordered" />
               </div>
               <div className="form-control">
+                    <label className="label">
+                            <span className="label-text">Photo URL</span>
+                    </label>
+                    <input type="text" placeholder="Enter your photo" name='photoURL' className="input input-bordered" required/>
+                </div>
+              <div className="form-control">
                 <label className="label">
                   <span className="label-text"> Confirm Password</span>
                 </label>
@@ -62,6 +74,7 @@ const SignUp = () => {
               </div>
               </form>
               <p className="label-text-alt mx-1">Already Have An Account? <Link className="text-purple-700 font-bold" to ="/login">Log In</Link></p>
+              
             </div>
           </div>
         </div>
