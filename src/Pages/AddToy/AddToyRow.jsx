@@ -1,19 +1,10 @@
 import React from 'react';
 
-const AddToyRow = ({booking}) => {
+const AddToyRow = ({booking,handleDelete}) => {
 
     const {_id,customerName, email, date, Price } = booking;
 
-    const handleDelete = id => {
-        const proceed = confirm('Do you want to delete this');
-        if (proceed){
-                fetch(``)
-                .then(res=>res.json())
-                .then(data => {
-                    console.log(data);
-                })
-        }
-    }
+    
 
     return (
         <tr className="hover">
@@ -27,7 +18,11 @@ const AddToyRow = ({booking}) => {
         <td>{date}</td>
 
         <td>{Price}</td>
+        <th>
+            <button onClick={handleConfirm} className='btn btn-primary'>Confirm</button>
+        </th>
       </tr>
+
     );
 };
 

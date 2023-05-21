@@ -26,7 +26,7 @@ const MyToy = () => {
         }
         console.log(order);
 
-        fetch('http://localhost:5000/order',{
+        fetch('https://toys-market-server-hasan-fahad.vercel.app/order',{
             method: 'POST',
             headers: {'Content-Type' : 'application/json'},
             body: JSON.stringify(order)

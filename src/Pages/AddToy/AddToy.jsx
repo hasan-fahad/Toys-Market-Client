@@ -9,13 +9,34 @@ const AddToy = () => {
 
     const {user} = useContext(AuthContext);
     const [addToy, setAddToy]= useState([]);
-    const url =`http://localhost:5000/order?email=${user.email}`;
+    const url =`https://toys-market-server-hasan-fahad.vercel.app/order?email=${user.email}`;
 
     useEffect (()=> {
         fetch(url)
         .then(res=>res.json())
         .then(data=> setAddToy(data))
     }, [])
+    const handleDelete = id => {
+        const proceed = confirm('Do you want to delete this');
+        if (proceed){
+                fetch(`https://toys-market-server-hasan-fahad.vercel.app/order/${id}`,
+                {
+                    method: 'DELETE',
+                    headers: { 'Content-Type': 'application/json' },
+
+                }
+                )
+                .then(res=>res.json())
+                .then(data => {
+                    console.log(data);
+                    if(data.deletedCount>0){
+                        alert('Deleted Done!')
+                        const remaining = addToy.filter(booking => booking._id !== id);
+                        setAddToy(remaining);
+                    }
+                })
+        }
+    }
     return (
       <div>
         <h2>My Toy</h2>
@@ -36,6 +57,7 @@ const AddToy = () => {
             addToy.map(booking => <AddToyRow 
             key={booking._id}
             booking={booking}
+            handleDelete= {handleDelete}
             ></AddToyRow>)
         }
     </tbody>
