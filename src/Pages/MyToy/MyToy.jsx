@@ -25,6 +25,16 @@ const MyToy = () => {
             Price
         }
         console.log(order);
+
+        fetch('http://localhost:5000/order',{
+            method: 'POST',
+            headers: {'Content-Type' : 'application/json'},
+            body: JSON.stringify(order)
+        })
+        .then(res => res.json())
+        .then( data => {
+            console.log(data);
+        })
     }
     return (
         <div>
