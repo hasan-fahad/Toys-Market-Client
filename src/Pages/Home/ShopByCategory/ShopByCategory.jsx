@@ -10,6 +10,7 @@ import robot1 from '../../../assets/Images/robot1.jpeg'
 import robot2 from '../../../assets/Images/robot2.jpeg'
 
 
+
 const ShopByCategory = () => {
     // const [shopCategorys, setShopCategory] = useState([]);
   
@@ -92,7 +93,7 @@ const ShopByCategory = () => {
         <p>Rating: 4.2</p>
     <div className="card-actions">
     <button className="btn btn-primary">View Details</button>
-      <button className="btn btn-primary">Buy Now</button>
+      <button className="btn btn-primary"> Buy Now </button>
     </div>
   </div>
 </div>
