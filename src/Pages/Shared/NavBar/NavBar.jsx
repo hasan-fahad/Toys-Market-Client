@@ -1,7 +1,18 @@
-import { Link } from "react-router-dom";
+
+import { Link } from 'react-router-dom';
 import logo from '../../../assets/Images/logo.png'
+import { useContext } from 'react';
+import { AuthContext } from '../../Provides/AuthProvider';
+
 
 const NavBar = () => {
+
+    const {user , logOut} = useContext(AuthContext)
+    const handleLogOut = () =>{
+        logOut()
+        .then()
+        .catch(error => console.log(error))
+    }
     const navItems = <>
         
         <li className="btn btn-outline rounded-md btn-success mx-3 my-2"><Link to='/'>Home</Link></li>
@@ -12,10 +23,14 @@ const NavBar = () => {
     </>
 
     const userProfile = <>
-            <li className="btn btn-outline btn-secondary my-2"><Link to ='/'>Profile</Link></li>
-            <li className="btn btn-outline btn-secondary my-2"><Link to ='/'>Add A Toy</Link></li>
-            <li className="btn btn-outline btn-secondary my-2"><Link to ='/'>My Toys</Link></li>
-            <li className="btn btn-outline btn-secondary my-2"><Link to ='/'>Logout</Link></li>
+    
+         <div>
+                {user ? 
+                        <button onClick={handleLogOut} className="btn">Log Out</button>:
+                        <Link to='/login'><button className="btn">Login</button></Link>
+                    }
+                </div>
+        
     </>
     return (
         <div className="navbar bg-base-100">
@@ -38,7 +53,7 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-   <button className="btn btn-outline btn-primary"><Link to='/login'>Log in</Link></button> 
+   {/* <button className="btn btn-outline btn-primary"><Link to="/login">Log in</Link></button>  */}
   <div className="flex-none">
     <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -60,7 +75,12 @@ const NavBar = () => {
     <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
-          <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+        {user && <label tabIndex={0} style={{fontSize:35}}>
+                    {/* <div className="w-10 rounded-full">
+                        <FaUserCircle/>
+                    </div> */}
+                    <img src={user.photoURL} alt="" className='w-12 h-12 mr-4 rounded-full' />
+                </label>}
         </div>
       </label>
       <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
