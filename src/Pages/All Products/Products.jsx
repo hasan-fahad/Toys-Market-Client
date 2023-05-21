@@ -17,7 +17,7 @@ const Products = ({product}) => {
     <p className="text-blue-600">Subcategory: {Subcategory}</p>
     <p><span className="font-semibold">Description:</span> {Description}</p>
     <div className="card-actions">
-      <Link to={`/addatoy/${_id}`}>
+      <Link to={`/mytoy/${_id}`}>
       <button className="btn btn-primary">Buy Now</button>
       </Link>
     </div>
