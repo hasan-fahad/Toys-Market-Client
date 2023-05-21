@@ -16,9 +16,9 @@ const NavBar = () => {
     const navItems = <>
         
         <li className="btn btn-outline rounded-md btn-success mx-3 my-2"><Link to='/'>Home</Link></li>
-        <li className="btn btn-outline rounded-md btn-success mx-3 my-2"><Link to='/about'>All Toys</Link></li>
+        <li className="btn btn-outline rounded-md btn-success mx-3 my-2"><Link to='/allproducts'>All Toys</Link></li>
         
-        <li className="btn btn-outline rounded-md btn-success mx-3 my-2"><Link to='/about'>Blogs</Link></li>
+        <li className="btn btn-outline rounded-md btn-success mx-3 my-2"><Link to='/blogs'>Blogs</Link></li>
         <li className="btn btn-outline rounded-md btn-success mx-3 my-2"><Link to='/about'>About Us</Link></li>
     </>
 
@@ -26,7 +26,7 @@ const NavBar = () => {
     
          <div>
                 {user?.email?<>
-                    
+                    <li><Link to="/allproducts">Add A Toy</Link></li>
                     <li><Link to="/addtoy">My Toy</Link></li>
                     <button onClick={handleLogOut} className="btn">Log Out</button>
                 </>
