@@ -36,7 +36,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'addatoy/:id',
-        element: <AddaToy></AddaToy>
+        element: <AddaToy></AddaToy>,
+        loader: ({params}) => fetch(`http://localhost:5000/allproducts/${params.id}`)
       }
 
     
