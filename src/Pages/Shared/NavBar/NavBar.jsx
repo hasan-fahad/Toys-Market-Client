@@ -25,8 +25,12 @@ const NavBar = () => {
     const userProfile = <>
     
          <div>
-                {user?.email?
-                        <button onClick={handleLogOut} className="btn">Log Out</button>:
+                {user?.email?<>
+                    
+                    <li><Link to="/addtoy">My Toy</Link></li>
+                    <button onClick={handleLogOut} className="btn">Log Out</button>
+                </>
+                        :
                         <Link to='/login'><button className="btn">Login</button></Link>
                     }
                 </div>
