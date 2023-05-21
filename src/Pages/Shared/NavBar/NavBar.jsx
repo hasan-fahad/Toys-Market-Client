@@ -26,12 +26,12 @@ const NavBar = () => {
     
          <div>
                 {user?.email?<>
-                    <li><Link to="/allproducts">Add A Toy</Link></li>
-                    <li><Link to="/addtoy">My Toy</Link></li>
-                    <button onClick={handleLogOut} className="btn">Log Out</button>
+                    <li className="btn btn-outline rounded-md btn-success mx-3 my-2"><Link to="/allproducts">Add A Toy</Link></li>
+                    <li className="btn btn-outline rounded-md btn-success mx-3 my-2"><Link to="/addtoy">My Toy</Link></li>
+                    <button className="btn btn-outline rounded-md btn-success mx-3 my-2" onClick={handleLogOut} >Log Out</button>
                 </>
                         :
-                        <Link to='/login'><button className="btn">Login</button></Link>
+                        <Link to='/login'><button className="btn btn-outline rounded-md btn-success mx-3 my-2">Login</button></Link>
                     }
                 </div>
         
