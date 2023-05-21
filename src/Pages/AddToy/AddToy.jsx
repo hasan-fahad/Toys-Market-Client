@@ -37,6 +37,19 @@ const AddToy = () => {
                 })
         }
     }
+
+    const handleConfirm = id => {
+        fetch(`https://toys-market-server-hasan-fahad.vercel.app/order/${id}`)
+        .then (res=>res.json())
+        .then(data=> {
+            console.log(data);
+            if(data.modification>0)
+            {
+                alert('Order updated');
+            }
+        })
+
+    }
     return (
       <div>
         <h2>My Toy</h2>
@@ -58,6 +71,7 @@ const AddToy = () => {
             key={booking._id}
             booking={booking}
             handleDelete= {handleDelete}
+            handleConfirm={handleConfirm}
             ></AddToyRow>)
         }
     </tbody>

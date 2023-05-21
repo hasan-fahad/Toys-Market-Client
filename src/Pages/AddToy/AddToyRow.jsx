@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AddToyRow = ({booking,handleDelete}) => {
+const AddToyRow = ({booking,handleDelete,handleConfirm}) => {
 
     const {_id,customerName, email, date, Price } = booking;
 
